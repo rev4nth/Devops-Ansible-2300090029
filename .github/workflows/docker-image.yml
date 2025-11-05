@@ -33,6 +33,7 @@ jobs:
           file: ./springbootbackend/backend.Dockerfile
           push: true
           tags: ${{ secrets.DOCKER_USERNAME }}/ansible-backend:latest
+          platforms: linux/amd64   
 
       # Step 5 — Build & Push Frontend Image
       - name: Build and Push Frontend Image
